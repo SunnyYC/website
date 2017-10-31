@@ -1,0 +1,1 @@
+!function(e){"use strict";if(void 0===e.jQuery)throw"jQuery lib required";var u=e.jQuery;e.include=function(e){u.ajax({url:e,type:"GET",async:!1,dataType:"html",success:function(e){document.write(e)}})}}(window);

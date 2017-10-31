@@ -1,0 +1,80 @@
+﻿<!--
+Created by simon on 2016/09/14.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <!--  关键词收拾联想 -->
+    <meta name="description" content="嘟嘟巴士是国内专业的智能公共出行平台，利用互联网技术为都市人群提供上下班通勤巴士、包车、周边游用车、直通车等智能化、高品质的出行服务，践行绿色出行理念，缓解城市交通拥堵，优化城市布局，构筑邻里社群。嘟嘟巴士始终温暖守护，伴你每次出行。"  />
+    <meta name="keywords" content="嘟嘟巴士,互联网巴士,嘟嘟,企业班车,深圳包车,包车拼车,企业包车" />
+
+
+    <link rel="stylesheet" href="../../Css/bootstrap.min_6c8ae80.css">
+    <link rel="stylesheet" href="../../Css/reset_61f843f.css">
+    <link rel="stylesheet" href="../../Css/common_2713b0a.css">
+    <link rel="stylesheet" type="text/css" href="../../Css/aboutus_e06eea3.css">
+
+    <script src="../../Scripts/rem_889480d.js"></script>
+    <script type="text/javascript" src="../../Scripts/jquery-min_310236f.js"></script>
+    <script src="../../Scripts/include_57bf689.js"></script>
+    <script type="text/javascript" src="../../Scripts/bootstrap.min_d19d126.js"></script>
+
+    <title>河马互动-嘟嘟巴士</title>
+
+    <style type="text/css">
+        .carousel-indicators li {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            margin: 1px;
+            text-indent: -999px;
+            cursor: pointer;
+            /* background-color: rgba(0, 0, 0, 1); */
+            border: 1px solid rgba(102,102,102,0.3);
+            border-radius: 5px;
+        }
+        .carousel-indicators .active {
+            width: 12px;
+            height: 12px;
+            margin: 0;
+            background-color: rgba(102, 102, 102, 0.2);
+            border-radius: 6px;
+        }
+    </style>
+</head>
+
+<body>
+<!-- 引入头部文件 -->
+<script>include("/html/headerfooter/header.html");</script>
+<div  class="hippopotamus">
+    <!-- 大图  pc-->
+    <!-- <img id="hippopotamus_pc" class="first_img" src=""> -->
+
+    <div id="hippopotamus_pc" class="carousel slide">
+        <img src="../../Picture/hema_hd_6426139.png" alt="First slide">
+        <img src="../../Picture/hema_fw_f4e4584.png" alt="Second slide">
+        <img src="../../Picture/hema_kh_1443933.png" alt="Third slide">
+        <img src="../../Picture/hema_td_d771836.png" alt="Four slide">
+    </div>
+
+    <!-- 小图 移动端 -->
+    <img id="hippopotamus_iphone" class="first_img_i" src="../../Picture/hmhd_iphone_2ea09dc.jpg">
+</div>
+<!-- 友盟统计 -->
+<div style="display:none">
+   <script src="../../Scripts/z_stat.js" language="JavaScript"></script>
+</div>
+<!-- 引入底部文件 -->
+<script>include("/html/headerfooter/footer.html");</script>
+<script type="text/javascript">
+    //JS控制导航栏“首页”红色横线
+    $('.nav ul #nav_li6').addClass('active').siblings().removeClass('active');
+    $('.nav ul #nav_li6 .dropDown #aboutus4').css({"color":'#f51e41'});
+    $('.nav ul #nav_li6 .title').text($('.nav ul #nav_li6 .dropDown #aboutus4').text());
+</script>
+<script src="../../Scripts/header.js"></script>
+
+</body>
+</html>

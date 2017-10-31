@@ -1,0 +1,689 @@
+﻿.carousel-inner>.item>a>img,
+.carousel-inner>.item>img,
+.img-responsive,
+.thumbnail a>img,
+.thumbnail>img {
+	width: 100%
+}
+
+.whole_mask {
+	background: #000;
+	filter: alpha(opacity=10);
+	opacity: .1;
+	left: 0;
+	top: 0;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	z-index: 10000
+}
+
+.main_content {
+	margin-top: 56px
+}
+
+.video_box {
+	display: none;
+	position: absolute;
+	width: 900px;
+	height: 514px;
+	z-index: 90000
+}
+
+.video_box span {
+	position: absolute;
+	font-size: 50px;
+	top: -18px;
+	right: 0;
+	color: #999;
+	z-index: 1000000000000;
+	display: none
+}
+
+.showPic {
+	width: 100%;
+	position: relative
+}
+
+#my_Carousel .carousel-inner img.l_l {
+	width: 100%
+}
+
+.banner1_box {
+	position: absolute;
+	left: 19.2%;
+	bottom: 14.1%;
+	width: 27.4%
+}
+
+.banner1_box img.banner_logo {
+	width: 66.7%
+}
+
+.banner1_box img.banner_text {
+	margin-top: 10px
+}
+
+.banner1_box img.banner_download {
+	margin-top: 20px;
+	width: 47.8%
+}
+
+.banner2_box {
+	position: absolute;
+	right: 18.8%;
+	bottom: 40.6%;
+	width: 32%;
+	text-align: right
+}
+
+.banner2_box img.banner_logo {
+	width: 57.1%
+}
+
+.banner2_box img.banner_text {
+	margin-top: 10px
+}
+
+.banner2_box img.banner_video {
+	margin-top: 20px;
+	width: 32.1%;
+	cursor: pointer
+}
+
+.swiper-slide .l_l {
+	width: 100%
+}
+
+.phone_download {
+	position: absolute;
+	left: 8%;
+	bottom: 8%;
+	width: 40%
+}
+
+.iphone_banner2_video {
+	position: absolute;
+	right: 8%;
+	bottom: 45%;
+	width: 29.3%
+}
+
+.banner_animation1 {
+	animation: banner1_move 1.5s;
+	-moz-animation: banner1_move 1.5s;
+	-webkit-animation: banner1_move 1.5s;
+	-o-animation: banner1_move 1.5s
+}
+
+@keyframes banner1_move {
+	0% {
+		bottom: -50%;
+		opacity: 0
+	}
+	100% {
+		bottom: 14.1%;
+		opacity: 1
+	}
+}
+
+@-moz-keyframes banner1_move {
+	0% {
+		bottom: -50%;
+		opacity: 0
+	}
+	100% {
+		bottom: 14.1%;
+		opacity: 1
+	}
+}
+
+@-webkit-keyframes banner1_move {
+	0% {
+		bottom: -50%;
+		opacity: 0
+	}
+	100% {
+		bottom: 14.1%;
+		opacity: 1
+	}
+}
+
+@-o-keyframes banner1_move {
+	0% {
+		bottom: -50%;
+		opacity: 0
+	}
+	100% {
+		bottom: 14.1%;
+		opacity: 1
+	}
+}
+
+.banner_animation2 {
+	animation: banner2_move 1.5s;
+	-moz-animation: banner2_move 1.5s;
+	-webkit-animation: banner2_move 1.5s;
+	-o-animation: banner2_move 1.5s
+}
+
+@keyframes banner2_move {
+	0% {
+		bottom: -50%;
+		opacity: 0
+	}
+	100% {
+		bottom: 40.6%;
+		opacity: 1
+	}
+}
+
+@-moz-keyframes banner2_move {
+	0% {
+		bottom: -50%;
+		opacity: 0
+	}
+	100% {
+		bottom: 40.6%;
+		opacity: 1
+	}
+}
+
+@-webkit-keyframes banner2_move {
+	0% {
+		bottom: -50%;
+		opacity: 0
+	}
+	100% {
+		bottom: 40.6%;
+		opacity: 1
+	}
+}
+
+@-o-keyframes banner2_move {
+	0% {
+		bottom: -50%;
+		opacity: 0
+	}
+	100% {
+		bottom: 40.6%;
+		opacity: 1
+	}
+}
+
+.textDescript {
+	width: 62.5%;
+	margin: 0 auto;
+	padding: 4.375% 0 4.17%
+}
+
+.textDescript ul {
+	overflow: hidden
+}
+
+.textDescript ul li {
+	position: relative;
+	font-size: 36px;
+	color: #666;
+	width: 100%;
+	text-align: center;
+	list-style: none
+}
+
+.textDescript ul span {
+	background-color: #fff;
+	position: relative;
+	padding: 0 2%;
+	display: inline-block;
+	color: #f51e41
+}
+
+.slogan_line {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 26px;
+	border-bottom: 2px solid #f51e41;
+	display: inline-block
+}
+
+.picList .container {
+	width: 62.5%;
+	margin: 0 auto
+}
+
+.picList .container .row {
+	width: 100%;
+	margin: 0;
+	padding: 0
+}
+
+.picList .container .row .img_DIV {
+	padding: 0;
+	width: 24.1%;
+	margin-right: 1.2%;
+	position: relative
+}
+
+.picList .container .row .img_DIV .phoneImg {
+	display: none
+}
+
+.picList .container .row .img_DIV .mask {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	background: rgba(245, 30, 65, .6);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#9921232c, 2c, endColorstr=#9921232c, 2c)
+}
+
+.picList .container .row .img_DIV .mask .down_mask {
+	width: 100%;
+	display: inline-block;
+	font-size: 6px;
+	color: #fff;
+	text-align: center;
+	padding-top: 8%;
+	padding-bottom: 8%;
+	font-size: 30px
+}
+
+.picList .container .row .img_DIV .mask .b_mask {
+	display: none
+}
+
+.picList .container .row .lastImg {
+	margin-right: 0
+}
+
+.picList .container .row .active .mask {
+	height: 100%;
+	background: rgba(33, 35, 44, .6)
+}
+
+.picList .container .row .active .mask .down_mask {
+	display: none
+}
+
+.picList .container .row .active .mask .b_mask {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	font-size: 20px;
+	text-align: center;
+	padding-top: 69%;
+	color: #fff
+}
+
+.mask .b_mask p {
+	margin: 0;
+	margin-top: -28px
+}
+
+.ac_left_top {
+	width: 12.4%;
+	height: 9%;
+	background: url(../Images/ac_left_top_e347650.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	left: 8.5%;
+	top: 34.5%
+}
+
+.ac_right_bottom {
+	width: 12.4%;
+	height: 9%;
+	background: url(../Images/ac_right_bottom_015cfa4.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	right: 8.5%;
+	bottom: 34.5%
+}
+
+.code_sign {
+	width: 100%
+}
+
+.duduCode {
+	padding-top: 9.375%;
+	width: 100%;
+	text-align: center
+}
+
+.erweima_box {
+	width: 13%;
+	display: inline-block;
+	margin-right: 10px
+}
+
+#download_ewm {
+	display: inline-block
+}
+
+.code_sign div {
+	width: 53.3%;
+	margin: 0 auto
+}
+
+.code_sign div ul {
+	overflow: hidden
+}
+
+.code_sign div ul li {
+	padding-top: 1.66%;
+	float: left;
+	list-style: none;
+	width: 23.8%;
+	margin-right: 1.5%;
+	font: 14px;
+	color: gray;
+	text-align: center
+}
+
+.code_sign div ul .lastLi {
+	margin-right: 0
+}
+
+.partner {
+	width: 62.5%;
+	margin: 0 auto;
+	margin-top: 9.175%
+}
+
+.partner img {
+	width: 100%
+}
+
+.downLode {
+	display: none
+}
+
+.section_search {
+	padding: 9.3% 0
+}
+
+.section_search .content {
+	width: 53.3%;
+	margin: 0 auto;
+	overflow: hidden;
+	cursor: pointer
+}
+
+.section_search .content ul {
+	width: 36.3%;
+	float: left;
+	border-left: 2px solid #f3f3f3;
+	padding-left: 1.16%
+}
+
+.section_search .content ul li {
+	list-style: none
+}
+
+.section_search .content ul li a {
+	text-decoration: none;
+	display: inline-block;
+	color: #999
+}
+
+.section_search .content ul .topic {
+	font-size: 24px;
+	color: #666;
+	margin-bottom: 5px
+}
+
+ul:hover .topic span {
+	color: #f51e41
+}
+
+.section_search .content ul .topic .more1 {
+	float: right;
+	width: 20px;
+	margin-top: 5px;
+	margin-right: 25.8%
+}
+
+.section_search .content ul .topic .more2 {
+	display: none
+}
+
+.section_search .content ul .account {
+	font-size: 16px;
+	color: #898989;
+	line-height: 26px
+}
+
+.section_search .content .news {
+	width: 27.4%
+}
+
+.section_search .content .news li .more1 {
+	margin-right: 0
+}
+
+#yinchang1 {
+	border: 0 solid #fff
+}
+
+.phone_partner,
+.phone_banner {
+	display: none
+}
+
+.pc_partner,
+.pc_banner {
+	display: block
+}
+
+@media only screen and (max-width:1300px) {
+	.section_search .content ul .topic {
+		font-size: 20px
+	}
+	.section_search .content ul .account {
+		font-size: 12px;
+		line-height: 20px
+	}
+	.textDescript ul li {
+		font-size: 26px
+	}
+	.slogan_line {
+		height: 18px
+	}
+	.picList .container .row .img_DIV .mask .down_mask {
+		font-size: 18px
+	}
+	.picList .container .row .active .mask .b_mask {
+		font-size: 14px
+	}
+	.mask .b_mask p {
+		margin: 0;
+		margin-top: -22px
+	}
+}
+
+@media only screen and (max-width:992px) {
+	#yinchang1 {
+		display: none
+	}
+	.main_content {
+		margin-top: 44px
+	}
+	.video_box {
+		display: none;
+		position: absolute;
+		z-index: 90000;
+		width: 100%;
+		margin-left: 0;
+		top: 44px;
+		left: 0
+	}
+	.video_box #a1 {
+		width: 100%;
+		height: 100%
+	}
+	.showPic {
+		width: 100%;
+		position: relative
+	}
+	.showPic .container .row div .img1 {
+		width: 100%;
+		display: none
+	}
+	.showPic .container .row div .img2 {
+		width: 100%;
+		display: inline-block
+	}
+	.textDescript {
+		width: 100%;
+		padding: 9.375% 0
+	}
+	.textDescript ul {
+		overflow: hidden
+	}
+	.textDescript ul li {
+		float: left;
+		font-size: 20px;
+		color: #666;
+		width: 100%;
+		text-align: center
+	}
+	.textDescript ul li span {
+		display: block;
+		font-size: 18px;
+		margin-top: 10px;
+		color: #666
+	}
+	.picList .container {
+		width: 84%
+	}
+	.picList .container .row .img_DIV {
+		width: 49.2%;
+		margin-right: 1.6%;
+		margin-bottom: 1.6%
+	}
+	.picList .container .row .img_DIV img {
+		width: 100%
+	}
+	.picList .container .row .img_DIV .computerImg {
+		display: none
+	}
+	.picList .container .row .img_DIV .phoneImg {
+		display: inline-block
+	}
+	.picList .container .row .img_DIV .mask {
+		display: none
+	}
+	.picList .container .row .secondImg {
+		margin-right: 0
+	}
+	.picList .container .row .lastImg {
+		margin-right: 0
+	}
+	.duduCode {
+		padding-top: 50px
+	}
+	.erweima_box {
+		width: 38.5%
+	}
+	#download_ewm {
+		display: none
+	}
+	.code_sign div {
+		width: 40%
+	}
+	.code_sign div ul li {
+		padding-top: 10px;
+		width: 100%;
+		margin-right: 0;
+		font: 14px;
+		color: gray;
+		text-align: center
+	}
+	.code_sign div ul .code {
+		display: none
+	}
+	.partner {
+		width: 84%;
+		margin-top: 50px;
+		font-size: 12px;
+		font-weight: 700
+	}
+	.downLode {
+		display: inline-block;
+		width: 100%;
+		margin-top: .6rem
+	}
+	.downLode .box {
+		text-align: center
+	}
+	.downLode .box .cont a {
+		display: inline-block;
+		font-size: 18px;
+		padding: 16px 30px;
+		background: #f51e41;
+		text-decoration: none
+	}
+	.downLode .box .cont a img {
+		display: inline-block;
+		width: 25px;
+		float: left
+	}
+	.downLode .box .cont a span {
+		font-size: 18px;
+		margin-left: 15px;
+		margin-top: 2px;
+		color: #fff
+	}
+	.section_search {
+		padding: 50px 0 30px
+	}
+	.section_search .content {
+		width: 100%
+	}
+	.section_search .content ul {
+		float: none;
+		margin: 0;
+		width: 100%;
+		border: 0;
+		padding-left: 0
+	}
+	.section_search .content ul li {
+		background: #f6f6f6;
+		padding: 12px 0 12px 8%;
+		margin-bottom: 2.7%;
+		font-size: 14px;
+		color: #666
+	}
+	.section_search .content ul .topic {
+		font-size: 18px;
+		color: #666;
+		margin-bottom: 20px
+	}
+	.section_search .content ul .topic .more1 {
+		display: none
+	}
+	.section_search .content ul .topic .more2 {
+		float: right;
+		display: inline-block;
+		margin-right: 8%;
+		padding-top: 7px
+	}
+	.section_search .content ul .account {
+		display: none
+	}
+	.section_search .content .news {
+		width: 100%
+	}
+	.section_search .content .news li .more {
+		margin-right: 8%
+	}
+	.pc_partner,
+	.pc_banner {
+		display: none
+	}
+	.phone_partner,
+	.phone_banner {
+		display: block
+	}
+}

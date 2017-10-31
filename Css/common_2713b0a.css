@@ -1,0 +1,535 @@
+﻿* {
+	margin: 0;
+	padding: 0
+}
+
+html,
+body {
+	width: 100%;
+	background: #fff;
+	font-size: 14px;
+	color: #999;
+	cursor: default;
+	font-family: "Microsoft YaHei", 微软雅黑
+}
+
+.img_100 {
+	width: 100%
+}
+
+.mask_cover {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 1000000;
+	background: rgba(0, 0, 0, .6);
+	display: none
+}
+
+a {
+	color: #999;
+	cursor: pointer
+}
+
+.container {
+	margin: 0;
+	padding: 0;
+	position: relative
+}
+
+.header {
+	width: 100%;
+	background: #fafafa;
+	position: fixed;
+	top: 0;
+	height: 56px;
+	z-index: 999999
+}
+
+.header .box {
+	width: 62.5%;
+	height: 100%;
+	margin: 0 auto
+}
+
+.header .box .logo {
+	width: 20%;
+	height: 100%;
+	float: left;
+	position: relative
+}
+
+.header .box .logo img {
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	width: 146px
+}
+
+.header .box .nav_btn {
+	display: none
+}
+
+.nav {
+	width: 79%;
+	height: 56px;
+	z-index: 999999;
+	display: inline-block;
+	padding-left: 50px
+}
+
+.nav ul li {
+	list-style: none;
+	float: left;
+	position: relative;
+	text-align: center;
+	height: 56px;
+	line-height: 56px;
+	width: 16%
+}
+
+.nav ul li .title {
+	text-decoration: none
+}
+
+.canclick {
+	width: 100%;
+	text-decoration: none
+}
+
+.canclick:hover {
+	text-decoration: none
+}
+
+.nav ul li img {
+	display: inline-block;
+	width: 8px;
+	height: 5px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	margin-left: 6px
+}
+
+.nav ul li img.up {
+	display: none
+}
+
+.nav ul li .dropDown {
+	padding-top: 16px;
+	padding-bottom: 10px;
+	background: #fafafa;
+	width: 110px;
+	position: absolute;
+	top: 56px;
+	right: 0;
+	left: 0;
+	margin: auto;
+	display: none;
+	z-index: 9999
+}
+
+.nav ul li .dropDown p {
+	margin: 0 0 10px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center
+}
+
+.nav ul li .dropDown a {
+	text-decoration: none;
+	color: #333
+}
+
+.nav ul li.active .sign {
+	width: 80%;
+	height: 4px;
+	background: #e56452;
+	display: block;
+	position: absolute;
+	bottom: 0;
+	right: 10%;
+	margin: auto;
+	transition: right .2s ease-in-out;
+	-moz-transition: right .2s ease-in-out;
+	-webkit-transition: right .2s ease-in-out;
+	-o-transition: right .2s ease-in-out;
+	pointer-events: none
+}
+
+.nav ul .active .title {
+	color: #e56452
+}
+
+.nav ul li:hover .title {
+	color: #333
+}
+
+.nav ul li:hover .dropDown {
+	display: inline-block
+}
+
+.footer {
+	width: 100%
+}
+
+.footer .container {
+	width: 62.5%;
+	min-width: 0;
+	padding: 2.7% 0 3%;
+	margin: 0 auto;
+	font-size: 12px;
+	color: #999;
+	border-top: 2px solid #f1f1f1
+}
+
+.footer .container .company {
+	width: 100%
+}
+
+.footer .container .company ul {
+	overflow: hidden
+}
+
+.footer .container .company ul li {
+	float: left;
+	list-style: none;
+	margin-right: 2%
+}
+
+.footer .container .company ul .name {
+	font-size: 12px;
+	line-height: 20px;
+	color: #8f8f8f;
+	font-weight: 700;
+	margin-right: 20px
+}
+
+.footer .container .friendly_link {
+	width: 100%
+}
+
+.footer .container .friendly_link ul {
+	overflow: hidden
+}
+
+.footer .container .friendly_link ul li {
+	list-style: none;
+	float: left;
+	font-size: 12px;
+	margin-right: 2%
+}
+
+.footer .container .friendly_link ul li a {
+	text-decoration: none;
+	color: #afafaf
+}
+
+.footer .container .friendly_link ul .name {
+	font-weight: 700;
+	margin-right: 20px
+}
+
+.footer .container .about_us {
+	width: 100%
+}
+
+.footer .container .about_us ul {
+	overflow: hidden
+}
+
+.footer .container .about_us ul li {
+	list-style: none;
+	float: left;
+	margin-right: 3%;
+	color: #afafaf
+}
+
+.footerimg {
+	padding-bottom: 5px;
+	max-height: 25px
+}
+
+.com_left_top {
+	width: 14%;
+	height: 14%;
+	background: url(../Images/ac_left_top_e347650.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	left: 11.7%;
+	top: 26.2%
+}
+
+.com_right_bottom {
+	width: 14%;
+	height: 14%;
+	background: url(../Images/ac_right_bottom_015cfa4.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	right: 11.7%;
+	bottom: 26.2%
+}
+
+.error_body {
+	margin-top: 56px;
+	background-color: #fafafa
+}
+
+.error_image {
+	width: 35%;
+	margin-top: 120px;
+	margin-left: 32.5%
+}
+
+.error_p {
+	margin-top: 40px;
+	text-align: center;
+	font-size: 24px;
+	color: #999;
+	padding-bottom: 200px
+}
+
+@media only screen and (max-width:992px) {
+	.header {
+		width: 100%;
+		background: #fafafa;
+		margin: 0;
+		height: 44px
+	}
+	.header .box {
+		width: 84%;
+		height: 44px;
+		position: relative
+	}
+	.header .box .logo {
+		height: 100%
+	}
+	.header .box .logo img {
+		dislay: inline-block;
+		width: 230px;
+		max-width: 230px;
+		max-width: 115px
+	}
+	.header .box .nav_btn {
+		display: inline-block;
+		width: 44px;
+		height: 44px;
+		float: right;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		right: 0
+	}
+	.header .box .nav_btn img {
+		float: right;
+		width: 18px;
+		margin-top: 14.29px
+	}
+	.header .box .nav_btn .menu_btn {
+		display: inline-block
+	}
+	.header .box .nav_btn .nav_close {
+		display: none
+	}
+	.nav {
+		display: none;
+		width: 100%;
+		height: auto;
+		margin-top: 44px;
+		margin-right: 0;
+		left: 0;
+		background: #fff;
+		z-index: 10000000000000000;
+		display: none;
+		padding-right: 0;
+		bottom: 0
+	}
+	.nav ul {
+		width: 84%;
+		margin-right: 8%
+	}
+	.nav ul li {
+		float: none;
+		width: 100%;
+		height: auto;
+		min-height: 35px;
+		line-height: 100%;
+		margin: 0;
+		font-size: .28rem;
+		color: #666;
+		text-align: left;
+		border-bottom: 1px solid #eee
+	}
+	.nav ul li .title {
+		font-size: 14px;
+		height: 45px;
+		line-height: 45px;
+		max-height: 42px;
+		display: inline-block;
+		padding-right: 0
+	}
+	.nav ul li img {
+		width: 34px;
+		height: 44px;
+		right: 0;
+		margin: 0;
+		padding: 18px 0 18px 20px
+	}
+	.nav ul li img.up {
+		display: none
+	}
+	.nav ul li .dropDown {
+		position: static;
+		width: 100%;
+		text-indent: .6rem;
+		background: #eee;
+		padding: 10px 0;
+		0
+	}
+	.nav ul li .dropDown p {
+		font-size: 13px;
+		height: .86rem;
+		max-height: 43px;
+		line-height: 43px;
+		text-align: left;
+		color: #888
+	}
+	.nav ul li:hover .sign {
+		display: none
+	}
+	.nav ul .active .sign {
+		display: none
+	}
+	.nav ul .nav_li1 {
+		width: 100%;
+		margin: 0
+	}
+	.nav ul .nav_li2 {
+		width: 100%;
+		margin: 0
+	}
+	.nav ul .nav_li3 {
+		width: 100%;
+		margin: 0
+	}
+	.nav ul .nav_li4 {
+		width: 100%;
+		margin: 0
+	}
+	.nav ul .nav_li5 {
+		width: 100%;
+		margin: 0
+	}
+	.nav ul .nav_li6 {
+		width: 100%;
+		margin: 0
+	}
+	.footer .container {
+		width: 84%;
+		margin: 0 auto;
+		padding-top: 0;
+		border: 0
+	}
+	.footer .container .company {
+		width: 100%
+	}
+	.footer .container .company ul {
+		overflow: hidden
+	}
+	.footer .container .company ul li {
+		margin-right: 8%;
+		margin-bottom: 10px
+	}
+	.footer .container .company ul .name {
+		display: block;
+		float: none;
+		border-bottom: 1px solid #ebebeb;
+		padding-bottom: 2%;
+		margin-bottom: 2%;
+		color: #999
+	}
+	.footer .container .friendly_link {
+		width: 100%;
+		margin-top: 5%
+	}
+	.footer .container .friendly_link ul {
+		overflow: hidden
+	}
+	.footer .container .friendly_link ul li {
+		margin-right: 2%
+	}
+	.footer .container .friendly_link ul .name {
+		display: block;
+		float: none;
+		border-bottom: 1px solid #ebebeb;
+		padding-bottom: 2%;
+		margin-bottom: 2%;
+		color: #999
+	}
+	.footerimg {
+		padding-bottom: 5px;
+		max-height: 18px
+	}
+	.footer .container .about_us {
+		width: 100%;
+		margin-top: 6%;
+		padding-bottom: 20%
+	}
+	.footer .container .about_us ul {
+		overflow: hidden
+	}
+	.footer .container .about_us ul li {
+		list-style: none;
+		float: left;
+		margin-right: 3%;
+		color: #afafaf
+	}
+	.error_body {
+		margin-top: 44px;
+		background-color: #fff
+	}
+	.error_image {
+		width: 92%;
+		margin-top: 60px;
+		margin-left: 0
+	}
+	.error_p {
+		margin-top: 20px;
+		font-size: 14px;
+		padding-bottom: 120px
+	}
+}
+
+#YSF-CUSTOM-ENTRY-4,
+#YSF-CUSTOM-ENTRY-1 {
+	display: none
+}
+
+body .swiper-pagination-bullet {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin: 1px;
+	text-indent: -999px;
+	cursor: pointer;
+	background-color: #000\9;
+	background-color: rgba(0, 0, 0, 0);
+	border: 1px solid #fff;
+	border-radius: 10px;
+	opacity: 1
+}
+
+body .swiper-pagination-bullet-active {
+	width: 12px;
+	height: 12px;
+	margin: 0;
+	background-color: #fff
+}
+
+body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+	margin: 0 3px
+}

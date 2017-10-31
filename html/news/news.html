@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>新闻-嘟嘟巴士</title>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <!--  关键词收拾联想 -->
+    <meta name="description" content="嘟嘟巴士是国内专业的智能公共出行平台，利用互联网技术为都市人群提供上下班通勤巴士、包车、周边游用车、直通车等智能化、高品质的出行服务，践行绿色出行理念，缓解城市交通拥堵，优化城市布局，构筑邻里社群。嘟嘟巴士始终温暖守护，伴你每次出行。" />
+    <meta name="keywords" content="嘟嘟巴士,互联网巴士,嘟嘟,企业班车,深圳包车,包车拼车,企业包车" />
+    <!-- 引入 Bootstrap -->
+    <link rel="stylesheet" href="../../Css/bootstrap.min_6c8ae80.css">
+    <link rel="stylesheet" href="../../Css/reset_61f843f.css">
+    <link rel="stylesheet" href="../../Css/common_2713b0a.css">
+    <link rel="stylesheet" href="../../Css/news_a91418b.css">
+    <link rel="stylesheet" type="text/css" href="../../Css/bootstrap_modifiy_aafea36.css">
+    <!--[if lt IE 9]>
+         <script src="../Scripts/html5shiv.js"></script>
+         <script src="../Scripts/respond.min.js"></script>
+      <![endif]-->
+    <script type="text/javascript" src="../../Scripts/template_404a564.js"></script>
+    <script src="../../Scripts/rem_889480d.js"></script>
+    <script type="text/javascript" src="../../Scripts/jquery-min_310236f.js"></script>
+    <script src="../../Scripts/include_57bf689.js"></script>
+    <script type="text/javascript" src="../../Scripts/common_d9aff4f.js"></script>
+</head>
+
+<body>
+    <!-- 引入头部文件 -->
+    <script>
+    include("../../html/headerfooter/header.html");
+    </script>
+    <div class="main_content">
+        <div class="showPic">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xm-12">
+                        <img class="img-responsive img1" src="../Picture/pc_new_banner_9810365.jpg" alt="">
+                        <img class="img-responsive img2" src="../Picture/phone_new_banner_65d13c3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="news_container">
+            <div class="news">
+                <ul id="news_list_id">
+                    <!-- 引入模板 -->
+                </ul>
+                <ul id="news_list_id_iphone">
+                    <!-- 引入模板 -->
+                </ul>
+                <p id="more_news" class="more_news">查看更多 >></p>
+            </div>
+        </div>
+    </div>
+    <!-- 友盟统计 -->
+    <div style="display:none">
+        <script src="../../Scripts/z_stat.js" language="JavaScript"></script>
+    </div>
+    <!-- 创建新闻列表的模板 -->
+    <script type="text/html" id="news_list">
+        {{each}}
+        <li>
+            <div class="left">
+                <img class="img1" src="../Picture/juxing_2fd38a8.png" alt="">
+                <img class="img2" src="../Picture/juxing2_2fd38a8.png" alt="">
+                <p class="day">{{$value.date}}</p>
+                <p class="month">{{$value.month}}月</p>
+            </div>
+
+            <a href="news_detail.html?value_id={{$value.id}}">
+                <div class="right">
+                    <p class="title">{{$value.title}}</p>
+                    <p class="time">
+                        {{if $value.source != ""}}
+                        <span class="source">{{$value.source}}</span>
+                        {{/if}}
+                        <span>{{$value.release_time}}</span>
+                    </p>
+                    <p class="brief">{{$value.summary}} ...</p>
+                    {{if $value.img != ''}}
+                    <img class="new_img" src=../Picture/{{$value.img}} alt="">
+                    {{/if}}
+                    <p class="read_all">阅读全文</p>
+                    <span class="news_id">{{$value.id}}</span>
+                </div>
+            </a>
+        </li>
+        {{/each}}
+    </script>
+    <!-- 创建新闻列表的模板 iphone-->
+    <script type="text/html" id="news_list_iphone">
+        {{each}}
+        <li id="newlist" flag="{{$value.id}}">
+            <a href="news_detail.html?value_id={{$value.id}}">
+                <div class="left">
+                    <img class="img1" src="../Picture/juxing_2fd38a8.png" alt="">
+                    <img class="img2" src="../Picture/juxing2_2fd38a8.png" alt="">
+                    <p class="day">{{$value.date}}</p>
+                    <p class="month">{{$value.month}}月</p>
+                </div>
+                <div class="right">
+                    <p class="title">{{$value.title}}</p>
+                    <p class="time">
+                        {{if $value.source != ""}}
+                        <span class="source">{{$value.source}}</span> {{/if}}
+                        <span>{{$value.release_time}}</span>
+                    </p>
+                </div>
+                <div class="new_cont">
+                    <p class="brief">{{$value.summary}} ...</p>
+                    {{if $value.img != ''}}
+                    <img class="new_img" src=../Picture/{{$value.img}} alt=""> {{/if}}
+                    <!-- <p class="read_all"><a href="news_detail.html">阅读全文</a></p> -->
+                    <!-- <span class="news_id">{{$value.id}}</span> -->
+                </div>
+            </a>
+        </li>
+        {{/each}}
+    </script>
+    <script>
+    include("../../html/headerfooter/footer.html");
+    </script>
+    <script type="text/javascript" src="../../Scripts/bootstrap.min_d19d126.js"></script>
+    <script src="../../Scripts/news.js"></script>
+    <script src="../../Scripts/header.js"></script>
+</body>
+
+</html>

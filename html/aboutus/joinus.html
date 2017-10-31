@@ -1,0 +1,197 @@
+﻿<!--
+Created by simon on 2016/09/14.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <!--  关键词收拾联想 -->
+    <meta name="description" content="嘟嘟巴士是国内专业的智能公共出行平台，利用互联网技术为都市人群提供上下班通勤巴士、包车、周边游用车、直通车等智能化、高品质的出行服务，践行绿色出行理念，缓解城市交通拥堵，优化城市布局，构筑邻里社群。嘟嘟巴士始终温暖守护，伴你每次出行。"  />
+    <meta name="keywords" content="嘟嘟巴士,互联网巴士,嘟嘟,企业班车,深圳包车,包车拼车,企业包车" />
+
+    <link rel="stylesheet" href="../../Css/bootstrap.min_6c8ae80.css">
+    <link rel="stylesheet" href="../../Css/reset_61f843f.css">
+    <link rel="stylesheet" href="../../Css/common_2713b0a.css">
+    <link rel="stylesheet" type="text/css" href="../../Css/aboutus_e06eea3.css">
+    <link rel="stylesheet" type="text/css" href="../../Css/bootstrap_modifiy_aafea36.css">
+
+    <script type="text/javascript" src="../../Scripts/template_404a564.js"></script>
+    <script type="text/javascript" src="../../Scripts/jquery-min_310236f.js"></script>
+    <script type="text/javascript" src="../../Scripts/include_57bf689.js"></script>
+    <script type="text/javascript" src="../../Scripts/rem_889480d.js"></script>
+
+    <title>加入我们-嘟嘟巴士</title>
+ </head>
+
+<body>
+<script>include("/bashi/html/headerfooter/header.html");</script>
+<!-- 网页版 -->
+<div class="jionus" id="jionus">
+    <!-- 头部大图 -->
+    <img class="first_img" src="../../Picture/pc_joinus_banner_4658a06.jpg">
+
+    <div class="m_l_40 m_jion_center f_z_20 color_333 m_pointer">
+        <ul class="">
+            <li id="h_p_active_id0" class="j_s_f" onclick="navClick(0)">
+                <span>产品/设计类</span>
+            </li>
+            <li id="h_p_active_id1" class="j_s_it" onclick="navClick(1)">
+                <span class="">IT技术类</span>
+            </li>
+            <li id="h_p_active_id2" class="j_s_f" onclick="navClick(2)">
+                <span class="">市场/运营类</span>
+            </li>
+            <li id="h_p_active_id3" class="j_s_f" onclick="navClick(3)">
+                <span class="">职能/支持类</span>
+            </li>
+        </ul>
+        <div class="m_l_20  hp_n_line"></div>
+    </div>
+    <div class="m_jion_center f_z_16 color_666 m_default">
+        <ul id="jionus_content"> </ul>
+    </div>
+    <div class="m_l_80 m_jion_center color_333 f_z_16">
+        <p class="l_h_25">嘟嘟巴士邀您一起来共创互联网出行梦!</p>
+        <p class="l_h_25">简历投递 : hr@dudu84.com</p>
+        <p class="l_h_25">联系电话 : 0755-86560643</p>
+        <p class="l_h_25">备注 : 简历投递邮箱标题请注明：“城市+应聘岗位+姓名”</p>
+    </div>
+</div>
+
+<!-- 缩小版 -->
+<div class="panel-group p_b_40" id="jionus_iphone">
+    <!-- 头部大图 -->
+    <img class="first_img" src="../../Picture/phone_joinus_banner_54334ba.jpg">
+
+    <div id="content_id_iphone" class="panel panel-default"> </div>
+
+    <div class="m_l_30 m_p_center color_333">
+        <p class="m_l_5 f_z_15 l_h_cm">嘟嘟巴士邀您一起来共创互联网出行梦!</p>
+        <p class="m_l_5 f_z_13 l_h_cm">简历投递 : hr@dudu84.com</p>
+        <p class="f_z_13 l_h_cm">联系电话 : 0755-86560643</p>
+        <p class="m_l_3 f_z_11 l_h_14 color_666">备注 : 简历投递邮箱标题请注明：“城市+应聘岗位+姓名”</p>
+    </div>
+</div>
+<!-- 友盟统计 -->
+<div style="display:none">
+   <script src="../../Scripts/z_stat.js" language="JavaScript"></script>
+</div>
+
+ <!-- 引入底部文件 -->
+<script>include("/html/headerfooter/footer.html");</script>
+ <!-- 加入我们内容 模板 pc -->
+<script type="text/html" id="content_model">
+    {{each}}
+        <li class="m_l_80">
+            <i class="js_line"></i>
+            <span class="l_h_25 color_333">{{$value.title}}</span>
+            <p class="l_h_25 m_l_5">
+                {{$value.content}}
+            </p>
+        </li>
+    {{/each}}
+</script>
+<!-- 加入我们内容 模板 iphone -->
+<script type="text/html" id="content_model_iphone">
+    {{each iphone as value i}}
+        <div class="panel-heading m_l_20">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion"
+                   href="#collapse{{i}}">
+                   {{if value.b_title == '产品/设计类'}}
+                        <div class="b_g">{{value.b_title}} <i class="up_img"></i></div>
+                   {{else}}
+                        <div class="b_g">{{value.b_title}} <i class="down_img"></i></div>
+                   {{/if}}
+                </a>
+            </h4>
+        </div>
+
+        <div id="collapse{{i}}" class="panel-collapse collapse in">
+            <div class="panel-body">
+                <ul  class="u_b_t">
+                    {{each value.data as values a}}
+                        {{if a == 0}}
+                            <li class="f_z_12">
+                                <p class="f_z_13 color_666">{{values.title}}</p>
+                                <p class="l_h_cm m_l_5">{{values.content}}</p>
+                            </li>
+                        {{else}}
+                            <li class="f_z_12 m_l_30">
+                                <p class="f_z_13 color_666">{{values.title}}</p>
+                                <p class="l_h_cm m_l_5">{{values.content}}</p>
+                            </li>
+                        {{/if}}
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+    {{/each}}
+</script>
+
+<script type="text/javascript" src="../../Scripts/bootstrap.min_d19d126.js"></script>
+<script type="text/javascript">
+    //JS控制导航栏“首页”红色横线
+    $('.nav ul #nav_li5').addClass('active').siblings().removeClass('active');
+    $('#aboutus2').css({"color":'#f51e41'});
+//  $('.nav ul #nav_li6 .title').text($('.nav ul #nav_li6 .dropDown #aboutus2').text());
+    var tempData = new Array();
+    var tempData_iphone = new Array();
+    template.defaults.escape = false;
+
+    //pc版  数据处理
+    $.getJSON("/js/aboutus/jionus.json", function (data) {
+         tempData = data;
+        var html = template('content_model',tempData[0]);
+        $('#jionus_content').html('').append(html);
+        $('#h_p_active_id0').addClass('j_s_f_active');//元素的选中状态
+    });
+
+    //缩小版  数据处理
+    $.getJSON("/js/aboutus/jionus_iphone.json", function (data) {
+        tempData_iphone = data;
+        var s_html = template('content_model_iphone',tempData_iphone);
+        $('#content_id_iphone').html('').append(s_html);
+
+        //缩小版 箭头方向控制方法
+        $('.panel-heading').click( function (e){
+            var $this = $(e.target);
+
+            if ($($this.parent().attr('href')).is(':visible'))
+            {//true 代表隐藏 箭头向下
+                $this.find('i').removeClass('up_img').addClass("down_img");
+            }else{//false 代表隐显示 箭头向上
+                $this.find('i').removeClass('down_img').addClass("up_img");
+            }
+        })
+         //缩小版 默认展开
+        $(function () {
+
+            $('#collapse4').collapse({ toggle: false  })});
+            $(function () { $('#collapse1').collapse('hide')});
+            $(function () { $('#collapse2').collapse('hide')});
+            $(function () { $('#collapse3').collapse('hide')});
+            $(function () {
+            $('#collapse0').collapse('show');
+        });
+    });
+
+    //pc版 点击切换红色色块
+    function navClick(tag){
+        var html = template('content_model',tempData[tag]);
+        $('#jionus_content').html('').append(html);
+
+        $('#h_p_active_id'+tag).siblings().removeClass('j_s_it_active');//移除同级元素的选中状态
+        $('#h_p_active_id'+tag).siblings().removeClass('j_s_f_active');//移除同级元素的选中状态
+        if (tag==1) {
+            $('#h_p_active_id'+tag).addClass('j_s_it_active');//元素的选中状态
+        } else{
+            $('#h_p_active_id'+tag).addClass('j_s_f_active');//元素的选中状态
+        }
+    }
+</script>
+<script src="../../Scripts/header.js"></script>
+
+</body>
+</html>

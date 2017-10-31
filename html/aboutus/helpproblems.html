@@ -1,0 +1,228 @@
+﻿<!--
+Created by simon on 2016/09/13.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	<!--  关键词收拾联想 -->
+	<meta name="description" content="嘟嘟巴士是国内专业的智能公共出行平台，利用互联网技术为都市人群提供上下班通勤巴士、包车、周边游用车、直通车等智能化、高品质的出行服务，践行绿色出行理念，缓解城市交通拥堵，优化城市布局，构筑邻里社群。嘟嘟巴士始终温暖守护，伴你每次出行。"  />
+    <meta name="keywords" content="嘟嘟巴士,互联网巴士,嘟嘟,企业班车,深圳包车,包车拼车,企业包车" />
+
+	<link rel="stylesheet" href="../../Css/bootstrap.min_6c8ae80.css">
+	<link rel="stylesheet" href="../../Css/reset_61f843f.css">
+    <link rel="stylesheet" href="../../Css/common_2713b0a.css">
+	<link rel="stylesheet" type="text/css" href="../../Css/aboutus_e06eea3.css">
+	<link rel="stylesheet" type="text/css" href="../../Css/bootstrap_modifiy_aafea36.css">
+
+	<script type="text/javascript" src="../../Scripts/template_404a564.js"></script>
+	<script type="text/javascript" src="../../Scripts/jquery-min_310236f.js"></script>
+	<script type="text/javascript" src="../../Scripts/include_57bf689.js"></script>
+	<script type="text/javascript" src="../../Scripts/rem_889480d.js"></script>
+
+	<title>帮助与问题-嘟嘟巴士</title>
+ </head>
+
+<body>
+<script>include("/html/headerfooter/header.html");</script>
+<!-- 网页版 -->
+<div class="helpproblems" id="helpproblems">
+    <!-- 头部大图 -->
+	<img class="first_img" src="../../Picture/pc_hp_banner_7937206.jpg">
+
+	<div class="m_l_40 m_hp_center f_z_20 color_333 m_pointer">
+		<ul class="">
+			<li id="h_p_active_id0" class="h_p_l" onclick="navClick(0)">
+				<span>上下班服务</span>
+			</li>
+			<li id="h_p_active_id1" class="h_p_f" onclick="navClick(1)">
+				<span class="">包车服务</span>
+			</li>
+			<li id="h_p_active_id2" class="h_p_f" onclick="navClick(2)">
+				<span class="">出行保障</span>
+			</li>
+			<li id="h_p_active_id3" class="h_p_f" onclick="navClick(3)">
+				<span class="">特色服务</span>
+ 			</li>
+			<li id="h_p_active_id4" class="h_p_r" onclick="navClick(4)">
+				<span class="">帮助中心</span>
+			</li>
+		</ul>
+		<div class="m_l_20  hp_n_line"></div>
+	</div>
+	<div class="m_l_40 m_hp_center f_z_14 color_666 m_default">
+		<ul id="content_id">  </ul>
+	</div>
+</div>
+
+<!-- 缩小版 -->
+<div class="panel-group p_b_40" id="helpproblems_iphone">
+	<!-- 头部大图 -->
+	<img class="first_img m_b_10" src="../../Picture/phone_hp_banner_96e3501.jpg">
+
+	<div id="content_id_iphone" class="panel panel-default"> </div>
+
+    <div style="text-align: center;">
+    	<ul class="u_b_t b_t_none">
+	    	<li class="f_z_13">
+				<p class="f_z_18 color_666"> 没有找到您的答案?</p>
+				<p class="l_h_18 m_l_5">扫码关注公众号，咨询客服。</p>
+				<p class="l_h_18"></p>
+					<img class="ewm_img  m_l_20" src="../../Picture/h_p_ewmimg_iphone_762c53f.png">
+			</li>
+	    </ul>
+    </div>
+
+</div>
+<!-- 友盟统计 -->
+<div style="display:none">
+   <script src="../../Scripts/z_stat.js" language="JavaScript"></script>
+</div>
+
+ <!-- 引入底部文件 -->
+<script>include("/html/headerfooter/footer.html");</script>
+ <!-- 帮助与问题内容 模板 pc -->
+<script type="text/html" id="content_model">
+    {{each}}
+        <li class="m_l_40">
+			<p class="f_z_18 color_333">{{$value.title}}</p>
+			<p class="l_h_25 m_l_5">{{$value.content}}</p>
+			<p class="l_h_25">{{$value.content2}}</p>
+			{{if $value.imgurl}}
+				<img class="ewm_img m_l_20" src=../../Picture/{{$value.imgurl}}>
+			{{/if}}
+		</li>
+    {{/each}}
+</script>
+ <!-- 帮助与问题内容 模板 iphone -->
+<script type="text/html" id="content_model_iphone">
+    {{each iphone as value i}}
+        <div class="panel-heading m_l_20">
+			<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion"
+				   href="#collapse{{i}}">
+				   {{if value.b_title == '常见问题'}}
+				   	    <div class="b_g">{{value.b_title}} <i class="up_img"></i></div>
+				   {{else}}
+				   		<div class="b_g">{{value.b_title}} <i class="down_img"></i></div>
+				   {{/if}}
+				</a>
+			</h4>
+		</div>
+
+		<div id="collapse{{i}}" class="panel-collapse collapse in">
+			{{if i == iphone.length}}
+			    <div class="panel-body b_tf_center m_l_30">
+        	        <ul class="u_b_t b_t_none">
+        	       		<li class="f_z_13">
+							<p class="f_z_18 color_666"> {{value.data[0].title}}</p>
+							<p class="l_h_18 m_l_5">{{value.data[0].content}}</p>
+							<p class="l_h_18">{{value.data[0].content2}}</p>
+							{{if value.data[0].imgurl}}
+								<img class="ewm_img  m_l_20" src=../../Picture/{{value.data[0].imgurl}}>
+							{{/if}}
+						</li>
+        	        </ul>
+				</div>
+			{{else}}
+        	    <div class="panel-body">
+        	        <ul  class="u_b_t">
+        	       		{{each value.data as values a}}
+        	       		    {{if a == 0}}
+        	                	<li class="f_z_12">
+									<p class="f_z_13 color_666">{{a+1}}.{{values.title}}</p>
+									<p class="l_h_18 m_l_5">{{values.content}}</p>
+									<p class="l_h_18">{{values.content2}}</p>
+								</li>
+        	       		    {{else}}
+        	       		        <li class="f_z_12 m_l_40">
+									<p class="f_z_13 color_666">{{a+1}}.{{values.title}}</p>
+									<p class="l_h_18 m_l_5">{{values.content}}</p>
+									<p class="l_h_18">{{values.content2}}</p>
+								</li>
+        	       		    {{/if}}
+        	            {{/each}}
+        	        </ul>
+				</div>
+			{{/if}}
+		</div>
+    {{/each}}
+</script>
+
+<script type="text/javascript" src="../../Scripts/bootstrap.min_d19d126.js"></script>
+<script src="../../Scripts/geturlstring_26bcb6e.js"></script>
+
+<script type="text/javascript">
+	//JS控制导航栏“首页”红色横线
+  	$('.nav ul #nav_li6').addClass('active').siblings().removeClass('active');
+    $('#aboutus3').css({"color":'#f51e41'});
+	$('.nav ul #nav_li6 .title').text($('.nav ul #nav_li6 .dropDown #aboutus3').text());
+    //pc版  数据处理
+    template.defaults.escape = false;
+
+    //读取网页传来的flag_tag值
+    var flag_tag = getQueryString("flag_tag");
+    if (!flag_tag) {
+    	flag_tag = 0;
+    }
+    $.getJSON("/js/aboutus/helpproblems.json", function (data) {
+        tempData = data;
+
+		navClick(flag_tag);
+	});
+
+    //缩小版  数据处理
+	$.getJSON("/js/aboutus/helpproblems_iphone.json", function (data) {
+		tempData_iphone = data;
+        var s_html = template('content_model_iphone',tempData_iphone);
+		$('#content_id_iphone').html('').append(s_html);
+
+		 //缩小版 箭头方向控制方法
+		$('a[data-toggle="collapse"]').click( function (e){
+			var $this = $(e.target);
+				console.log($this);
+				console.log($($this.parent().attr('href')).is(':visible'));
+
+			if ($($this.parent().attr('href')).is(':visible'))
+			{//true 代表隐藏 箭头向下
+    	        $this.find('i').removeClass('up_img').addClass("down_img");
+			}else{//false 代表隐显示 箭头向上
+				$this.find('i').removeClass('down_img').addClass("up_img");
+			}
+		})
+		 //缩小版 默认展开
+		$(function () {
+
+			$('#collapse4').collapse({ toggle: false  })});
+			$(function () { $('#collapse1').collapse('hide')});
+			$(function () { $('#collapse2').collapse('hide')});
+			$(function () { $('#collapse3').collapse('hide')});
+			$(function () { $('#collapse4').collapse('hide')});
+			$(function () {
+			$('#collapse0').collapse('show');
+		});
+	});
+
+    //pc版 点击切换红色色块
+    function navClick(tag){
+  		var html = template('content_model',tempData[tag]);
+		$('#content_id').html('').append(html);
+
+	    $('#h_p_active_id'+tag).siblings().removeClass('h_p_l_active');//移除同级元素的选中状态
+	    $('#h_p_active_id'+tag).siblings().removeClass('h_p_f_active');//移除同级元素的选中状态
+	    $('#h_p_active_id'+tag).siblings().removeClass('h_p_r_active');//移除同级元素的选中状态
+		if (tag==0) {
+        	$('#h_p_active_id'+tag).addClass('h_p_l_active');//元素的选中状态
+		}else if (tag==4) {
+        	$('#h_p_active_id'+tag).addClass('h_p_r_active');//元素的选中状态
+		}else{
+        	$('#h_p_active_id'+tag).addClass('h_p_f_active');//元素的选中状态
+		}
+    }
+
+</script>
+<script src="../../Scripts/header.js"></script>
+
+</body>
+</html>
