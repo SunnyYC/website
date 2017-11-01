@@ -7,8 +7,8 @@ Created by simon on 2016/09/14.
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
     <!--  关键词收拾联想 -->
-    <meta name="description" content="嘟嘟巴士是国内专业的智能公共出行平台，利用互联网技术为都市人群提供上下班通勤巴士、包车、周边游用车、直通车等智能化、高品质的出行服务，践行绿色出行理念，缓解城市交通拥堵，优化城市布局，构筑邻里社群。嘟嘟巴士始终温暖守护，伴你每次出行。"  />
-    <meta name="keywords" content="嘟嘟巴士,互联网巴士,嘟嘟,企业班车,深圳包车,包车拼车,企业包车" />
+    <meta name="description" content=""  />
+    <meta name="keywords" content="" />
 
     <link rel="stylesheet" href="../../Css/bootstrap.min_6c8ae80.css">
     <link rel="stylesheet" href="../../Css/reset_61f843f.css">
@@ -20,6 +20,7 @@ Created by simon on 2016/09/14.
     <script type="text/javascript" src="../../Scripts/jquery-min_310236f.js"></script>
     <script type="text/javascript" src="../../Scripts/include_57bf689.js"></script>
     <script type="text/javascript" src="../../Scripts/rem_889480d.js"></script>
+    <script type="text/javascript" src="../../Scripts/common_d9aff4f.js"></script>
 
     <title>加入我们-嘟嘟巴士</title>
  </head>
@@ -141,7 +142,7 @@ Created by simon on 2016/09/14.
     template.defaults.escape = false;
 
     //pc版  数据处理
-    $.getJSON("/js/aboutus/jionus.json", function (data) {
+    $.getJSON(json_url+"/json/joinus.json", function (data) {
          tempData = data;
         var html = template('content_model',tempData[0]);
         $('#jionus_content').html('').append(html);
@@ -149,7 +150,7 @@ Created by simon on 2016/09/14.
     });
 
     //缩小版  数据处理
-    $.getJSON("/js/aboutus/jionus_iphone.json", function (data) {
+    $.getJSON(json_url+"json/joinus_iphone.json", function (data) {
         tempData_iphone = data;
         var s_html = template('content_model_iphone',tempData_iphone);
         $('#content_id_iphone').html('').append(s_html);
