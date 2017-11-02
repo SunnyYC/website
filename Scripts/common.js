@@ -45,7 +45,7 @@ getDomainQuery(document.referrer).indexOf("dudubashi.com") > -1 || getDomainQuer
 var url_os = getUrlParam("os");
 url_os && !isNaN(url_os) && setCookie("os", url_os, 7);
 
-var json_url = "/bashi";
+var json_url = "";
 function getTitle(){
 	$.ajax({
 	  url:json_url+"/json/title.json",

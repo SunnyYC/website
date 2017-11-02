@@ -15,7 +15,7 @@ $(".nav ul").on("click", ".dropDown p a, .nav ul li", function() {
 	$(this).parents("li").siblings().find(".dropDown p").css({
 		color: "#333"
 	}), $(this).css({
-		color: "#f51e41"
+		color: "#e56452"
 	}).siblings().css({
 		color: "#333"
 	}), $(this).parents("li").addClass("active").siblings().removeClass("active"), $(this).addClass("active").siblings().removeClass("active")

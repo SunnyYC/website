@@ -20,13 +20,13 @@ Created by simon on 2016/09/14.
     <script type="text/javascript" src="../../Scripts/jquery-min_310236f.js"></script>
     <script type="text/javascript" src="../../Scripts/include_57bf689.js"></script>
     <script type="text/javascript" src="../../Scripts/rem_889480d.js"></script>
-    <script type="text/javascript" src="../../Scripts/common_d9aff4f.js"></script>
+    <script type="text/javascript" src="../../Scripts/common.js"></script>
 
-    <title>加入我们-嘟嘟巴士</title>
+    <title>加入我们</title>
  </head>
 
 <body>
-<script>include("/bashi/html/headerfooter/header.html");</script>
+<script>include("../../html/headerfooter/header.html");</script>
 <!-- 网页版 -->
 <div class="jionus" id="jionus">
     <!-- 头部大图 -->
@@ -135,8 +135,8 @@ Created by simon on 2016/09/14.
 <script type="text/javascript">
     //JS控制导航栏“首页”红色横线
     $('.nav ul #nav_li5').addClass('active').siblings().removeClass('active');
-    $('#aboutus2').css({"color":'#f51e41'});
-//  $('.nav ul #nav_li6 .title').text($('.nav ul #nav_li6 .dropDown #aboutus2').text());
+    $('#aboutus2').css({"color":'#e56452'});
+    $('.nav ul #nav_li5 .title').text($('.nav ul #nav_li5 .dropDown #aboutus2').text());
     var tempData = new Array();
     var tempData_iphone = new Array();
     template.defaults.escape = false;

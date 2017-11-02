@@ -236,7 +236,7 @@
 	position: relative;
 	padding: 0 2%;
 	display: inline-block;
-	color: #f51e41
+	color: #e56452
 }
 
 .slogan_line {
@@ -244,7 +244,7 @@
 	left: 0;
 	width: 100%;
 	height: 26px;
-	border-bottom: 2px solid #f51e41;
+	border-bottom: 2px solid #e56452;
 	display: inline-block
 }
 
@@ -434,7 +434,7 @@
 }
 
 ul:hover .topic span {
-	color: #f51e41
+	color: #e56452
 }
 
 .section_search .content ul .topic .more1 {
@@ -621,7 +621,7 @@ ul:hover .topic span {
 		display: inline-block;
 		font-size: 18px;
 		padding: 16px 30px;
-		background: #f51e41;
+		background: #e56452;
 		text-decoration: none
 	}
 	.downLode .box .cont a img {

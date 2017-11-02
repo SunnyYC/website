@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>新闻</title>
+    <title>新闻中心</title>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
     <!--  关键词收拾联想 -->
@@ -22,7 +22,7 @@
     <script src="../../Scripts/rem_889480d.js"></script>
     <script type="text/javascript" src="../../Scripts/jquery-min_310236f.js"></script>
     <script src="../../Scripts/include_57bf689.js"></script>
-    <script type="text/javascript" src="../../Scripts/common_d9aff4f.js"></script>
+    <script type="text/javascript" src="../../Scripts/common.js"></script>
 </head>
 
 <body>
@@ -79,7 +79,7 @@
                     </p>
                     <p class="brief">{{$value.summary}} ...</p>
                     {{if $value.img != ''}}
-                    <img class="new_img" src=../Picture/{{$value.img}} alt="">
+                    <img class="new_img" src={{$value.img}} alt="">
                     {{/if}}
                     <p class="read_all">阅读全文</p>
                     <span class="news_id">{{$value.id}}</span>
