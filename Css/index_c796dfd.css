@@ -274,7 +274,7 @@
 	width: 100%;
 	position: absolute;
 	bottom: 0;
-	background: rgba(245, 30, 65, .6);
+	background: rgba(248, 112, 84, .8);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#9921232c, 2c, endColorstr=#9921232c, 2c)
 }
 
@@ -350,7 +350,9 @@
 	width: 100%;
 	text-align: center
 }
-
+.duduCode img{
+	border:2px solid #ddd;
+}
 .erweima_box {
 	width: 13%;
 	display: inline-block;

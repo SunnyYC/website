@@ -10,6 +10,9 @@ Created by simon on 2016/09/14.
     <meta name="description" content=""  />
     <meta name="keywords" content="" />
 
+    <!-- icon图标  -->
+    <link rel="shortcut icon" href="../../Picture/_favicon.ico">
+
     <link rel="stylesheet" href="../../Css/bootstrap.min_6c8ae80.css">
     <link rel="stylesheet" href="../../Css/reset_61f843f.css">
     <link rel="stylesheet" href="../../Css/common_2713b0a.css">
@@ -53,8 +56,8 @@ Created by simon on 2016/09/14.
         <ul id="jionus_content"> </ul>
     </div>
     <div class="m_l_80 m_jion_center color_333 f_z_16">
-        <p class="l_h_25">嘟嘟巴士邀您一起来共创互联网出行梦!</p>
-        <p class="l_h_25">简历投递 : hr@dudu84.com</p>
+        <p class="l_h_25">走啊科技邀您一起来共创互联网出行梦!</p>
+        <p class="l_h_25">简历投递 : shuaiqun@bushuzhuli.com</p>
         <p class="l_h_25">联系电话 : 0755-86560643</p>
         <p class="l_h_25">备注 : 简历投递邮箱标题请注明：“城市+应聘岗位+姓名”</p>
     </div>
@@ -68,8 +71,8 @@ Created by simon on 2016/09/14.
     <div id="content_id_iphone" class="panel panel-default"> </div>
 
     <div class="m_l_30 m_p_center color_333">
-        <p class="m_l_5 f_z_15 l_h_cm">嘟嘟巴士邀您一起来共创互联网出行梦!</p>
-        <p class="m_l_5 f_z_13 l_h_cm">简历投递 : hr@dudu84.com</p>
+        <p class="m_l_5 f_z_15 l_h_cm">走啊科技邀您一起来共创互联网出行梦!</p>
+        <p class="m_l_5 f_z_13 l_h_cm">简历投递 : shuaiqun@bushuzhuli.com</p>
         <p class="f_z_13 l_h_cm">联系电话 : 0755-86560643</p>
         <p class="m_l_3 f_z_11 l_h_14 color_666">备注 : 简历投递邮箱标题请注明：“城市+应聘岗位+姓名”</p>
     </div>
@@ -150,7 +153,7 @@ Created by simon on 2016/09/14.
     });
 
     //缩小版  数据处理
-    $.getJSON(json_url+"json/joinus_iphone.json", function (data) {
+    $.getJSON(json_url+"/json/joinus_iphone.json", function (data) {
         tempData_iphone = data;
         var s_html = template('content_model_iphone',tempData_iphone);
         $('#content_id_iphone').html('').append(s_html);

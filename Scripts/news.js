@@ -24,7 +24,7 @@ $.ajax({
 		data: {
 			page: e
 		},
-		dataType: "jsonp",
+		dataType: "json",
 		success: function(a) {
 			console.log(a);
 			var n = a.data,

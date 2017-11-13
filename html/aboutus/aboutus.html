@@ -9,7 +9,8 @@ Created by simon on 2016/09/12.
     <!--  关键词收拾联想 -->
 	<meta name="description" content=""  />
     <meta name="keywords" content="" />
-
+    <!-- icon图标  -->
+    <link rel="shortcut icon" href="../../Picture/_favicon.ico">
 	<link rel="stylesheet" href="../../Css/bootstrap.min_6c8ae80.css">
 	<link rel="stylesheet" href="../../Css/reset_61f843f.css">
     <link rel="stylesheet" href="../../Css/common_2713b0a.css">
@@ -31,8 +32,8 @@ Created by simon on 2016/09/12.
 <div class="aboutus">
 
     <!-- 头部大图 -->
-	<img class="first_img pc_banner" src="../../Picture/pc_aboutus_banner_51f728a.jpg">
-	<img class="first_img phone_banner" src="../../Picture/phone_aboutus_banner_28dce1e.jpg">
+	<img class="first_img pc_banner" src="../../Images/team.jpg">
+	<img class="first_img phone_banner" src="../../Images/team.jpg">
 	<!-- 公司简介 -->
 	<div class="m_p_center m_l_40">
 		<i class="sm_line"></i>
@@ -145,7 +146,7 @@ Created by simon on 2016/09/12.
 
 	    // 百度地图API功能
 	    map = new BMap.Map("bd_map");// 初始化地图
-		var point = new BMap.Point(113.946707,22.54612);
+		var point = new BMap.Point(120.183278,30.333255);
 	    map.centerAndZoom(point, 18);
 	    map.addControl(new BMap.NavigationControl()); //添加默认缩放平移控件
 
@@ -153,7 +154,7 @@ Created by simon on 2016/09/12.
 	    map.defaultOffset = new BMap.Size(100, 10);
 
   	 	//创建自定义图标
-	    var myIcon = new BMap.Icon('/images/public/map_loca_85778a5.png', new BMap.Size(30, 50));
+	    var myIcon = new BMap.Icon('../../Images/map.png', new BMap.Size(30, 50));
 
 	    //重新添加自定义标注
 	    var marker = new BMap.Marker(point,{icon:myIcon});
