@@ -41,31 +41,6 @@ $(window).scroll(function() {
 	$("html, body").animate({
 		scrollTop: 0
 	}, 1e3)
-}), $.ajax({
-	type: "post",
-	url: "/index.php",
-	data: {
-		func: "official_enterprise_get_success_case"
-	},
-	dataType: "json",
-	success: function(e) {
-		if("0000" == e.result) {
-			var n = e.data,
-				o = template("successCaseTemp", n);
-			if($("#successCaseBox").html(o), n.length > 1) {
-				new Swiper("#successCaseSwiper", {
-					autoplay: 5e3,
-					loop: !0,
-					autoplayDisableOnInteraction: !1,
-					grabCursor: !0,
-					paginationClickable: !0,
-					keyboardControl: !0,
-					prevButton: ".swiper-button-prev",
-					nextButton: ".swiper-button-next"
-				})
-			} else $(".swiper-button-prev").hide(), $(".swiper-button-next").hide()
-		}
-	}
 });
 var $customForm = $("#customForm"),
 	_need_type = 1;

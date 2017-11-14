@@ -70,7 +70,7 @@
                 <p class="month">{{$value.month}}月</p>
             </div>
 
-            <a href="news_detail.html?value_id={{$value.id}}">
+            <a href="news_detail.html?value_id={{$value.id}}&json_id={{$value.num}}">
                 <div class="right">
                     <p class="title">{{$value.title}}</p>
                     <p class="time">
@@ -94,7 +94,7 @@
     <script type="text/html" id="news_list_iphone">
         {{each}}
         <li id="newlist" flag="{{$value.id}}">
-            <a href="news_detail.html?value_id={{$value.id}}">
+            <a href="news_detail.html?value_id={{$value.id}}&json_id={{$value.num}}">
                 <div class="left">
                     <img class="img1" src="../Picture/juxing_2fd38a8.png" alt="">
                     <img class="img2" src="../Picture/juxing2_2fd38a8.png" alt="">

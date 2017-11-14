@@ -1,3 +1,4 @@
+/*
 function browserRedirect() {
 	var e, o = $(".pc_banner").css("display");
 	e = $("block" == o ? ".showPic .banner2_box .banner_video" : ".showPic .iphone_banner2_video");
@@ -82,6 +83,7 @@ function browserRedirect() {
 		}), windowMask.hide()
 	}))
 }
+*/
 $(".nav ul #nav_li1").addClass("active").siblings().removeClass("active"), $("#my_Carousel").carousel("cycle");
 var swiper = new Swiper(".swiper-container", {
 	autoplay: 5e3,
@@ -135,6 +137,7 @@ var win_width = screen.width,
 lessThenIE_9 && $("body").css({
 	overflow: "auto"
 });
+/*
 var set_video_center = function() {
 	var e = $(".video_box").width(),
 		o = $(".video_box").height(),
@@ -147,6 +150,7 @@ var set_video_center = function() {
 	})
 };
 set_video_center();
+*/
 var img_DIV = $(".picList .container .row .img_DIV");
 img_DIV.mouseenter(function() {
 	$(this).addClass("active").siblings().removeClass("active")
@@ -160,9 +164,7 @@ img_DIV.mouseenter(function() {
 	$(this).css({
 		background: "#fff"
 	}).find(".noClick_img").show(), $(this).find(".click_img").hide()
-}), window.onresize = function() {
-	browserRedirect()
-}, browserRedirect(), $(".downLode .box .cont a").click(function() {
+}), $(".downLode .box .cont a").click(function() {
 	var e = navigator.userAgent.toLowerCase();
 	if(/iphone|ipad|ipod/.test(e)) {
 		var o = "https://itunes.apple.com/us/app/du-du-ba-shi/id1013595157?l=zh&ls=1&mt=8";
@@ -185,6 +187,7 @@ img_DIV.mouseenter(function() {
 		width: "100%"
 	}), windowMask.hide()
 });
+
 var u = navigator.userAgent,
 	isAndroid = u.indexOf("Android") > -1 || u.indexOf("Adr") > -1,
 	isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);

@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	
+	<!-- icon图标  -->
+    <link rel="shortcut icon" href="../../Picture/_favicon.ico">
+    <!--  关键词收拾联想 -->
+	<meta name="description" content=""  />
+    <meta name="keywords" content="" />
+
+	<title></title>
+	<link rel="stylesheet" href="../../Css/reset_61f843f.css">
+    <link rel="stylesheet" href="../../Css/common_2713b0a.css">
+    <script type="text/javascript" src="../../Scripts/jquery-min_310236f.js"></script>
+    <script type="text/javascript" src="../../Scripts/fastclick_a0fc6c2.js"></script>
+
+   	<style type="text/css">
+
+		.nav{
+			position: static;
+			display: inline-block;
+			z-index: 100000;
+			padding-left: 0px;
+		}
+		.nav ul{
+   			padding: 0 8%;
+			padding-bottom: 30px;
+		}
+		.nav ul li img {
+		    width: 12px;
+		    height:8px;
+		    right: 0;
+		    margin: 0;
+		    padding: 18px 0 18px 20px;
+		}
+		.nav ul li .dropDown{
+			padding-bottom: 20px;
+		}
+		.nav ul li .dropDown p {
+		    font-size: 13px;
+		    height: 20px;
+		    max-height: 43px;
+		    line-height: 43px;
+		    text-align: left;
+		    color: #888;
+		    padding-left: 20px;
+		}
+		.header .box .nav_btn .nav_close{
+			display: inline-block;
+		}
+		.nav ul li .width_title{
+			width: 100%;
+		}
+   	</style>
+</head>
+<body>
+	<div class="header">
+		<div class="box">
+			<div class="logo"><img src="/Picture/logo_61a9578.png" alt=""></div>
+			<div class="nav_btn">
+				<img class="nav_close" src="/Picture/nav_close_a62ce60.png" alt="">
+			</div>
+		</div>
+	</div>
+	<div class="nav">
+			<ul>
+			<li class="nav_li1">
+				<a class="title width_title" id="title_1" href="/index.html" rel="external">首页</a>
+				<p class="sign"></p>
+			</li>
+			<li class="nav_li2">
+				<a class="title width_title" id="title_2" href="/html/news/news.html" rel="external">新闻中心</a>
+				<p class="sign"></p>
+			</li>
+			<li class="nav_li3">
+				<a class="title width_title" id="title_3" href="/html/aboutus/aboutus.html" rel="external">公司简介</a>
+				<p class="sign"></p>
+			</li>
+			<li class="nav_li4">
+				<a id="title_4" class="title width_title" href="/html/ecline.html" rel="external">业务介绍</a>
+				<img class="down" src="/Picture/down_arrow_3a6f558.png" alt="">
+				<img class="up" src="/Picture/up_arrow_2cc4448.png" alt="">
+				<div class="dropDown">
+					<a href="/html/ecline.html" rel="external"><p id="direct" >车辆调度</p></a>
+					<a  href="/html/ecline.html" rel="external"><p id="tours">财务管理</p></a>
+					<a href="/html/ecline.html" rel="external"><p id="direct" >行程安排</p></a>
+					<a  href="/html/ecline.html" rel="external"><p id="tours">车辆管理</p></a>
+				</div>
+				<p class="sign"></p>
+			</li>
+			
+			<li class="nav_li5">
+				<a id="title_5" class="title" href="/html/aboutus/aboutus.html" rel="external">关于我们</a>
+				<img class="down" src="/Picture/down_arrow_3a6f558.png" alt="">
+				<img class="up" src="/Picture/up_arrow_2cc4448.png" alt="">
+				<div class="dropDown">
+					<a href="/html/aboutus/aboutus.html" rel="external"><p id="aboutus1" >关于我们</p></a>
+					<a href="/html/aboutus/joinus.html" rel="external"><p id="aboutus2" >加入我们</p></a>
+					<a href="/html/aboutus/helpproblems.html" rel="external"><p id="aboutus3">帮助与问题</p></a>
+				</div>
+				<p class="sign"></p>
+			</li>
+			<li class="nav_li6">
+				<a id="title_6" class="title width_title" href="http://www.buszhuli.com:8080/vcar/web/login/loginOut" target="_blank">巴士助理入口</a>
+				<p class="sign"></p>
+			</li>
+		</ul>
+	</div>
+	<!-- 友盟统计 -->
+	<div style="display:none">
+	   <script src="/Scripts/z_stat.js" language="JavaScript"></script>
+	</div>
+	<script>
+		$(function() {
+		  	FastClick.attach(document.body);
+		});
+		var current_page_id = localStorage.getItem("current_page");
+		var current_text = localStorage.getItem("current_text");
+
+		$('.header .box .nav_btn a').attr({"href":page_url});
+		$(".nav ul .nav_li1 a").css({"color":"#333"});
+		if (current_page_id) {
+			current_page_id = JSON.parse(current_page_id);
+		}
+		if (current_text) {
+			$("#" + current_page_id).parents("li").find(".title").text(current_text);
+		}
+
+		$("#" + current_page_id).css({"color":"#f51e41"});
+		$("#" + current_page_id).parents("li").find(".title").css({"color":"#f51e41"});
+		$("#" + current_page_id).parents("li").siblings().find(".title").css({"color":"#999"});
+
+		var page_url = $("#" + current_page_id).parents("li").find(".title").attr("href");
+
+		$(".dropDown a p").click(function(){
+			var curren_id = JSON.stringify($(this).attr("id"));
+			localStorage.setItem("current_page",curren_id);
+			localStorage.setItem("current_text",$(this).text());
+		});
+
+		$(".title").click(function(){
+			var curren_id = JSON.stringify($(this).attr("id"));
+			localStorage.setItem("current_page",curren_id);
+			localStorage.setItem("current_text",$(this).text());
+		});
+
+		//导航点击图标箭头的切换
+		$('.nav ul').click(function(e){
+			var $this = $(e.target);
+
+			if($this.get(0).tagName =='IMG'){
+				if($this.hasClass("down")){
+					$this.hide();
+					$this.parents("li").find(".up").show();
+					$this.parents("li").find(".dropDown").css({"border-top":"1px solid #f51f40"}).show();
+
+					$this.parents("li").siblings().find(".dropDown").hide();
+					$this.parents("li").siblings().find(".down").show();
+					$this.parents("li").siblings().find(".up").hide();
+				}else if($this.hasClass("up")){
+					$this.hide();
+					$this.parents('li').find(".down").show();
+					$this.parents("li").find(".dropDown").hide();
+				}
+			}
+		});
+
+		$('.header .box .nav_btn .nav_close').click(function(){
+			history.back();
+		});
+	</script>
+
+</body>
+</html>
+

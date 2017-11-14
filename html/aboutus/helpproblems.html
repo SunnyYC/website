@@ -36,16 +36,16 @@ Created by simon on 2016/09/13.
 	<div class="m_l_40 m_hp_center f_z_20 color_333 m_pointer">
 		<ul class="">
 			<li id="h_p_active_id0" class="h_p_l" onclick="navClick(0)">
-				<span>上下班服务</span>
+				<span>车辆调度</span>
 			</li>
 			<li id="h_p_active_id1" class="h_p_f" onclick="navClick(1)">
-				<span class="">包车服务</span>
+				<span class="">财务管理</span>
 			</li>
 			<li id="h_p_active_id2" class="h_p_f" onclick="navClick(2)">
-				<span class="">出行保障</span>
+				<span class="">行程安排</span>
 			</li>
 			<li id="h_p_active_id3" class="h_p_f" onclick="navClick(3)">
-				<span class="">特色服务</span>
+				<span class="">车辆管理</span>
  			</li>
 			<li id="h_p_active_id4" class="h_p_r" onclick="navClick(4)">
 				<span class="">帮助中心</span>
@@ -71,7 +71,7 @@ Created by simon on 2016/09/13.
 				<p class="f_z_18 color_666"> 没有找到您的答案?</p>
 				<p class="l_h_18 m_l_5">扫码关注公众号，咨询客服。</p>
 				<p class="l_h_18"></p>
-					<img class="ewm_img  m_l_20" src="../../Picture/h_p_ewmimg_iphone_762c53f.png">
+					<img class="ewm_img  m_l_20" src="../../Picture/dd_service_7a5c25b.jpg">
 			</li>
 	    </ul>
     </div>
@@ -168,14 +168,14 @@ Created by simon on 2016/09/13.
     if (!flag_tag) {
     	flag_tag = 0;
     }
-    $.getJSON("/js/aboutus/helpproblems.json", function (data) {
+    $.getJSON("/json/helpproblems.json", function (data) {
         tempData = data;
 
 		navClick(flag_tag);
 	});
 
     //缩小版  数据处理
-	$.getJSON("/js/aboutus/helpproblems_iphone.json", function (data) {
+	$.getJSON("/json/helpproblems_iphone.json", function (data) {
 		tempData_iphone = data;
         var s_html = template('content_model_iphone',tempData_iphone);
 		$('#content_id_iphone').html('').append(s_html);

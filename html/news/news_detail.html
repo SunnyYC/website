@@ -25,6 +25,9 @@
     <script type="text/javascript" src="../../Scripts/include_57bf689.js"></script>
     <script type="text/javascript" src="../../Scripts/geturlstring_26bcb6e.js"></script>
     <script type="text/javascript" src="../../Scripts/common.js"></script>
+    <script type="text/javascript">
+        var news_id = getQueryString("value_id");
+    </script>
 </head>
 
 <body>
@@ -41,7 +44,9 @@
                     <span class="source"></span>
                 </p>
             </div>
-            <div class="content"></div>
+            <div class="content">
+               <script>include('/html/news_tpl/news_'+news_id+'.html');</script>
+            </div>
         </div>
     </div>
     <!-- 友盟统计 -->
