@@ -48,7 +48,7 @@ url_os && !isNaN(url_os) && setCookie("os", url_os, 7);
 var json_url = "";
 function getTitle(){
 	$.ajax({
-	  url:json_url+"/json/title.json",
+	  url:"http://172.16.3.66:8080/userInfo/list",
 	  data:{},
 	  dataType: "json",
 	  success: function(result){

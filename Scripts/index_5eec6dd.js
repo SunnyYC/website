@@ -167,10 +167,10 @@ img_DIV.mouseenter(function() {
 }), $(".downLode .box .cont a").click(function() {
 	var e = navigator.userAgent.toLowerCase();
 	if(/iphone|ipad|ipod/.test(e)) {
-		var o = "https://itunes.apple.com/us/app/du-du-ba-shi/id1013595157?l=zh&ls=1&mt=8";
+		var o = "https://itunes.apple.com/cn/app/id1288415356?mt=8";
 		$(this).find("a").attr("src", o)
 	} else if(/android/.test(e)) {
-		var i = "http://a.app.qq.com/o/simple.jsp?pkgname=com.letubao.dodobusapk&g_f=991653";
+		var i = "http://app.mi.com/details?id=com.domain.carmanager&ref=search";
 		$(this).find("a").attr("src", i)
 	}
 }), $(".section_search .content .help").click(function() {
@@ -202,7 +202,7 @@ isAndroid && $.ajax({
 		var o = e.data.download_url;
 		$(".downLode a").attr("href", o)
 	}
-}, "json"), isiOS && $(".downLode a").attr("href", "http://a.app.qq.com/o/simple.jsp?pkgname=com.letubao.dodobusapk&g_f=991653"), $(function() {
+}, "json"), isiOS && $(".downLode a").attr("href", "https://itunes.apple.com/cn/app/id1288415356?mt=8"), $(function() {
 	$.ajax({
 		url: "http://houtai.dudubashi.com/index.php/app/Updates/check",
 		data: {
@@ -212,7 +212,7 @@ isAndroid && $.ajax({
 		dataType: "jsonp",
 		success: function(e) {
 			var o = e.data.download_url;
-			$(".duduCode .androidCode a").attr("href", o)
+			// $(".duduCode .androidCode a").attr("href", o)
 		}
 	}, "json")
 });
